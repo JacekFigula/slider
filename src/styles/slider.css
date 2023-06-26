@@ -1,10 +1,62 @@
-.slider {}
+:root {
+    --sliderHeight: 200px;
+}
 
-.slider .slider__slides {}
-.slider .slider__slide {}
-.slider .slider__hdl {}
-.slider .slider__lead {}
-.slider .slider__link {}
+.slider {
+    background-color: peru;
+    margin-top: 300px;
+    overflow: hidden;
+    width: 100%;
+    min-height: var(--sliderHeight);
 
-.slider .slider__nav {}
-.slider .slider__btn {}
+}
+
+.slider .slider__slides {
+    position: relative;
+}
+
+.slider .slider__slide {
+    width: 100%;
+    background-color: lightcoral;
+    position: absolute;
+    top: 0;
+    min-height: var(--sliderHeight);
+}
+
+.slider .slider__slide:first-child {
+    background-image: url("../images/slide-1.jpeg");
+    left: 0;
+}
+
+.slider .slider__slide:nth-child(2) {
+    background-image: url("../images/slide-2.jpg");
+    left: 100%;
+}
+
+.slider .slider__slide:last-child {
+    background-image: url("../images/slide-3.jpg");
+    left: 200%;
+}
+
+.slider .slider__box {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.slider .slider__hdl {
+}
+
+.slider .slider__lead {
+}
+
+.slider .slider__link {
+}
+
+.slider .slider__nav {
+}
+
+.slider .slider__btn {
+}
